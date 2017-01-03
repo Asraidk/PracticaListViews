@@ -27,7 +27,7 @@ public class ListViewComplex extends AppCompatActivity {
         lstOpciones.setAdapter(adaptador);
 
         //on click para escoltar quin pack del listview s'ha pres
-        //i dir alguna cosa sobre ell
+        //i dir alguna cosa sobre ell nostre cas el titol que te
         lstOpciones.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             public void onItemClick(AdapterView<?> arg0, View vista, int posicion,
