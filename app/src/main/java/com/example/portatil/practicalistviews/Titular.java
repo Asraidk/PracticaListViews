@@ -12,12 +12,12 @@ public class Titular{
 
     private String titulo;
     private String subtitulo;
-    //private ImageView imagen;
+    private String imagen;
 
-    public Titular(String tit, String sub/*,ImageView img*/){
+    public Titular(String tit, String sub,String img){
         titulo = tit;
         subtitulo = sub;
-        //imagen = img ;
+        imagen = img ;
     }
 
 
@@ -29,7 +29,7 @@ public class Titular{
         return subtitulo;
     }
 
-    /*public ImageView getImagen(){        return imagen;    }*/
+    public String getImagen(){        return imagen;    }
 
 
 

@@ -8,8 +8,8 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:padding="5dp"
-        android:src="@drawable/casa"
         />
+    <!--android:src="@drawable/casa" -->
     <LinearLayout android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">

@@ -45,10 +45,10 @@ public class ListViewComplex extends AppCompatActivity {
     //la clase la tenim declarada apart!
     private Titular[] datos =
             new Titular[]{
-                    new Titular("Part 1", "Subpart del 1"),
-                    new Titular("Part 2", "Subpart del 2"),
-                    new Titular("Part 3", "Subpart del 3"),
-                    new Titular("Part 4", "Subpart del 4")
+                    new Titular("Part 1", "Subpart del 1","1"),
+                    new Titular("Part 2", "Subpart del 2","2"),
+                    new Titular("Part 3", "Subpart del 3","3"),
+                    new Titular("Part 4", "Subpart del 4","4")
             };
 
 
@@ -75,9 +75,32 @@ public class ListViewComplex extends AppCompatActivity {
             TextView lblSubtitulo = (TextView)item.findViewById(R.id.LblSubTitulo);
             lblSubtitulo.setText(datos[position].getSubtitulo());
             //imagen a declarar i instancia per utilitzarlo com un 3 element en el listview
-            //ImageView imagen = (ImageView)item.findViewById(R.id.icon);
+            ImageView imagen = (ImageView)item.findViewById(R.id.icon);
 
+            if (datos [position].getImagen().equals("1")){
+                imagen.setImageDrawable(parent.getResources().getDrawable(R.drawable.apaga));
+            }
+            if (datos [position].getImagen().equals("2")){
+                imagen.setImageDrawable(parent.getResources().getDrawable(R.drawable.casa));
+            }
+            if (datos [position].getImagen().equals("3")){
+                imagen.setImageDrawable(parent.getResources().getDrawable(R.drawable.conecta));
+            }
+            if (datos [position].getImagen().equals("4")){
+                imagen.setImageDrawable(parent.getResources().getDrawable(R.drawable.hack));
+            }
 
+           /* switch (datos [position].getImagen()){
+
+                case "1":
+                    imagen.setImageDrawable(parent.getResources().getDrawable(R.drawable.apaga));
+                case "2":
+                    imagen.setImageDrawable(parent.getResources().getDrawable(R.drawable.casa));
+                case "3":
+                    imagen.setImageDrawable(parent.getResources().getDrawable(R.drawable.conecta));
+                case "4":
+                    imagen.setImageDrawable(parent.getResources().getDrawable(R.drawable.hack));
+            }*/
 
             return(item);
         }
