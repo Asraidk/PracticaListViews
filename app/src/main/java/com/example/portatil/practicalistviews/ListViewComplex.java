@@ -77,7 +77,7 @@ public class ListViewComplex extends AppCompatActivity {
             //imagen a declarar i instancia per utilitzarlo com un 3 element en el listview
             ImageView imagen = (ImageView)item.findViewById(R.id.icon);
 
-            if (datos [position].getImagen().equals("1")){
+            /*if (datos [position].getImagen().equals("1")){
                 imagen.setImageDrawable(parent.getResources().getDrawable(R.drawable.apaga));
             }
             if (datos [position].getImagen().equals("2")){
@@ -88,19 +88,23 @@ public class ListViewComplex extends AppCompatActivity {
             }
             if (datos [position].getImagen().equals("4")){
                 imagen.setImageDrawable(parent.getResources().getDrawable(R.drawable.hack));
-            }
+            }*/
 
-           /* switch (datos [position].getImagen()){
+            switch (datos [position].getImagen()){
 
                 case "1":
                     imagen.setImageDrawable(parent.getResources().getDrawable(R.drawable.apaga));
+                    break;
                 case "2":
                     imagen.setImageDrawable(parent.getResources().getDrawable(R.drawable.casa));
+                    break;
                 case "3":
                     imagen.setImageDrawable(parent.getResources().getDrawable(R.drawable.conecta));
+                    break;
                 case "4":
                     imagen.setImageDrawable(parent.getResources().getDrawable(R.drawable.hack));
-            }*/
+                    break;
+            }
 
             return(item);
         }
